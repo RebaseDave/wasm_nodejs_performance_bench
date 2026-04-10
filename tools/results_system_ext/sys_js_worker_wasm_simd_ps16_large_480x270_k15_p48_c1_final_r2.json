@@ -1,0 +1,273 @@
+{
+  "meta": {
+    "timeStamp": "2026-01-30T13:28:41.970Z",
+    "client": {
+      "hostname": "Stefans-Letzter",
+      "platform": "win32",
+      "arch": "x64",
+      "node": "v24.13.0",
+      "cpus": {
+        "count": 12,
+        "model": "AMD Ryzen 5 7600 6-Core Processor              ",
+        "speed": 3800
+      },
+      "memory": {
+        "totalMB": 31905,
+        "freeMB": 25296,
+        "usedPercent": 21
+      }
+    },
+    "test": {
+      "tag": "final",
+      "rep": 2,
+      "serverBase": "http://192.168.0.5:3000",
+      "isLocalHost": false
+    }
+  },
+  "cfg": {
+    "variant": "js_worker_wasm_simd",
+    "poolSize": 16,
+    "workload": {
+      "name": "large_480x270_k15_p48",
+      "width": 480,
+      "height": 270,
+      "kernelSize": 15,
+      "passes": 48,
+      "payloadBytes": 518400
+    },
+    "load": {
+      "concurrency": 1,
+      "warmupSec": 10,
+      "durationSec": 30
+    },
+    "seed": 42
+  },
+  "client": {
+    "ok": 37,
+    "err": 0,
+    "wallSec": 30.8083404000001,
+    "throughputRps": 1.2009734870366429,
+    "latencyMs": {
+      "n": 37,
+      "min": 826.8470999998972,
+      "mean": 832.6076027027306,
+      "p50": 832.2260999996215,
+      "p95": 837.4418400000781,
+      "p99": 838.3347200001031,
+      "max": 838.4780000001192
+    },
+    "latenciesRawMs": [
+      832.8958999998868,
+      832.2260999996215,
+      835.8470999998972,
+      830.5887000001967,
+      834.1459999997169,
+      838.4780000001192,
+      836.6591999996454,
+      833.2160000000149,
+      830.4001000002027,
+      835.5333000002429,
+      831.7476000003517,
+      829.8565000006929,
+      834.748399999924,
+      832.8453999999911,
+      833.3319000005722,
+      837.282300000079,
+      829.8819000003859,
+      832.0805999999866,
+      832.0149999996647,
+      826.9018999999389,
+      833.5860999999568,
+      835.2691999999806,
+      831.5949999997392,
+      836.9454000005499,
+      832.0784999998286,
+      830.5649999994785,
+      828.5794000001624,
+      837.0531000001356,
+      835.0738000003621,
+      838.0800000000745,
+      833.4742999998853,
+      828.8231000006199,
+      826.8470999998972,
+      828.3568000001833,
+      828.4359999997541,
+      830.0595999993384,
+      830.9769999999553
+    ],
+    "serverMs": {
+      "n": 37,
+      "min": 799.065,
+      "mean": 803.503891891892,
+      "p50": 803.406,
+      "p95": 807.4218,
+      "p99": 808.6566799999999,
+      "max": 809.309
+    },
+    "serverMsRaw": [
+      803.406,
+      800.781,
+      805.61,
+      803.909,
+      800.722,
+      807.403,
+      807.109,
+      804.118,
+      802.792,
+      801.762,
+      802.952,
+      801.314,
+      806.12,
+      802.973,
+      802.485,
+      809.309,
+      803.521,
+      803.67,
+      803.285,
+      800.462,
+      807.497,
+      804.604,
+      803.206,
+      804.828,
+      801.145,
+      803.595,
+      799.5,
+      804.68,
+      807.108,
+      807.348,
+      803.434,
+      802.059,
+      800.819,
+      799.834,
+      801.844,
+      799.065,
+      805.375
+    ],
+    "traffic": {
+      "bytesIn": 19180800,
+      "bytesOut": 19180800,
+      "avgWorkloadKB": "506.25",
+      "totalTrafficMB": "36.58"
+    }
+  },
+  "server": {
+    "before": {
+      "upMs": 6693821.5479999995,
+      "requests": {
+        "ok": 20623,
+        "err": 0
+      },
+      "traffic": {
+        "bytesIn": 10690963200,
+        "bytesOut": 10690963200
+      },
+      "cpu": {
+        "cpuMs": 0,
+        "wallMs": 10018.382299999706,
+        "cpuPercent": 0
+      },
+      "memory": {
+        "rss": 3432022016,
+        "heapTotal": 12382208,
+        "heapUsed": 10120648,
+        "external": 17479648,
+        "arrayBuffers": 1423035111
+      },
+      "inflight": {
+        "total": 0,
+        "byKey": {},
+        "peakTotal": 16,
+        "peakByKey": {
+          "js_pure:4": 1,
+          "js_wasm:4": 1,
+          "js_wasm_simd:4": 1,
+          "js_worker:4": 4,
+          "js_worker:8": 8,
+          "js_worker:16": 16,
+          "js_worker_wasm:4": 4,
+          "js_worker_wasm:8": 8,
+          "js_worker_wasm:16": 16,
+          "js_worker_wasm_simd:4": 4,
+          "js_worker_wasm_simd:8": 9,
+          "js_worker_wasm_simd:16": 1
+        }
+      },
+      "queues": {
+        "byKey": {
+          "js_pure:4": 0,
+          "js_wasm:4": 0,
+          "js_wasm_simd:4": 0,
+          "js_worker:4": 0,
+          "js_worker:8": 0,
+          "js_worker:16": 0,
+          "js_worker_wasm:4": 0,
+          "js_worker_wasm:8": 0,
+          "js_worker_wasm:16": 0,
+          "js_worker_wasm_simd:4": 0,
+          "js_worker_wasm_simd:8": 0,
+          "js_worker_wasm_simd:16": 0
+        },
+        "totalPending": 0
+      }
+    },
+    "after": {
+      "upMs": 6734814.6862,
+      "requests": {
+        "ok": 20672,
+        "err": 0
+      },
+      "traffic": {
+        "bytesIn": 10716364800,
+        "bytesOut": 10716364800
+      },
+      "cpu": {
+        "cpuMs": 38077,
+        "wallMs": 40993.1333999997,
+        "cpuPercent": 92.88628812161082
+      },
+      "memory": {
+        "rss": 3442032640,
+        "heapTotal": 12120064,
+        "heapUsed": 9932296,
+        "external": 16538094,
+        "arrayBuffers": 1448013557
+      },
+      "inflight": {
+        "total": 0,
+        "byKey": {},
+        "peakTotal": 16,
+        "peakByKey": {
+          "js_pure:4": 1,
+          "js_wasm:4": 1,
+          "js_wasm_simd:4": 1,
+          "js_worker:4": 4,
+          "js_worker:8": 8,
+          "js_worker:16": 16,
+          "js_worker_wasm:4": 4,
+          "js_worker_wasm:8": 8,
+          "js_worker_wasm:16": 16,
+          "js_worker_wasm_simd:4": 4,
+          "js_worker_wasm_simd:8": 9,
+          "js_worker_wasm_simd:16": 1
+        }
+      },
+      "queues": {
+        "byKey": {
+          "js_pure:4": 0,
+          "js_wasm:4": 0,
+          "js_wasm_simd:4": 0,
+          "js_worker:4": 0,
+          "js_worker:8": 0,
+          "js_worker:16": 0,
+          "js_worker_wasm:4": 0,
+          "js_worker_wasm:8": 0,
+          "js_worker_wasm:16": 0,
+          "js_worker_wasm_simd:4": 0,
+          "js_worker_wasm_simd:8": 0,
+          "js_worker_wasm_simd:16": 0
+        },
+        "totalPending": 0
+      }
+    }
+  }
+}

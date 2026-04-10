@@ -1,0 +1,263 @@
+{
+  "meta": {
+    "timeStamp": "2026-01-30T13:10:46.612Z",
+    "client": {
+      "hostname": "Stefans-Letzter",
+      "platform": "win32",
+      "arch": "x64",
+      "node": "v24.13.0",
+      "cpus": {
+        "count": 12,
+        "model": "AMD Ryzen 5 7600 6-Core Processor              ",
+        "speed": 3800
+      },
+      "memory": {
+        "totalMB": 31905,
+        "freeMB": 25300,
+        "usedPercent": 21
+      }
+    },
+    "test": {
+      "tag": "final",
+      "rep": 2,
+      "serverBase": "http://192.168.0.5:3000",
+      "isLocalHost": false
+    }
+  },
+  "cfg": {
+    "variant": "js_worker_wasm_simd",
+    "poolSize": 4,
+    "workload": {
+      "name": "large_480x270_k15_p48",
+      "width": 480,
+      "height": 270,
+      "kernelSize": 15,
+      "passes": 48,
+      "payloadBytes": 518400
+    },
+    "load": {
+      "concurrency": 1,
+      "warmupSec": 10,
+      "durationSec": 30
+    },
+    "seed": 42
+  },
+  "client": {
+    "ok": 36,
+    "err": 0,
+    "wallSec": 30.029705099999905,
+    "throughputRps": 1.198812971360152,
+    "latencyMs": {
+      "n": 36,
+      "min": 825.3914999999106,
+      "mean": 834.108300000067,
+      "p50": 833.8284499999136,
+      "p95": 841.3504500004929,
+      "p99": 843.380275000073,
+      "max": 843.6524000000209
+    },
+    "latenciesRawMs": [
+      843.6524000000209,
+      837.4257000004873,
+      831.3970999997109,
+      840.1412000004202,
+      839.7010000003502,
+      840.8423000006005,
+      840.0192999998108,
+      833.5859000002965,
+      837.3009000001475,
+      830.3174999998882,
+      829.7808999996632,
+      830.8591999998316,
+      836.0126999998465,
+      833.4383000005037,
+      834.1953999996185,
+      842.8749000001699,
+      834.0427999999374,
+      831.1094000004232,
+      838.4973999997601,
+      829.7648000000045,
+      833.6140999998897,
+      829.4691000003368,
+      835.2869999995455,
+      832.536100000143,
+      829.6894000004977,
+      830.6354000000283,
+      838.7413000008091,
+      833.3835000004619,
+      825.3914999999106,
+      835.3379999995232,
+      836.8974999999627,
+      828.36969999969,
+      834.7275999998674,
+      834.3530000001192,
+      825.4396999999881,
+      829.066800000146
+    ],
+    "serverMs": {
+      "n": 36,
+      "min": 798.2,
+      "mean": 804.1984444444445,
+      "p50": 803.579,
+      "p95": 809.30925,
+      "p99": 814.2221499999999,
+      "max": 816.641
+    },
+    "serverMsRaw": [
+      816.641,
+      807.364,
+      803.393,
+      809.169,
+      803.585,
+      808.735,
+      801.675,
+      803.573,
+      808.823,
+      802.155,
+      798.2,
+      804.666,
+      805.48,
+      802.701,
+      805.54,
+      809.73,
+      803.864,
+      802.374,
+      806.449,
+      802.794,
+      804.914,
+      801.79,
+      805.964,
+      802.563,
+      802.166,
+      799.98,
+      808.624,
+      803.805,
+      799.807,
+      802.747,
+      800.963,
+      799.366,
+      805.983,
+      804.091,
+      799.176,
+      802.294
+    ],
+    "traffic": {
+      "bytesIn": 18662400,
+      "bytesOut": 18662400,
+      "avgWorkloadKB": "506.25",
+      "totalTrafficMB": "35.60"
+    }
+  },
+  "server": {
+    "before": {
+      "upMs": 5619245.0021,
+      "requests": {
+        "ok": 16079,
+        "err": 0
+      },
+      "traffic": {
+        "bytesIn": 8335353600,
+        "bytesOut": 8335353600
+      },
+      "cpu": {
+        "cpuMs": 0,
+        "wallMs": 10026.40490000043,
+        "cpuPercent": 0
+      },
+      "memory": {
+        "rss": 2737709056,
+        "heapTotal": 12120064,
+        "heapUsed": 9165352,
+        "external": 17776373,
+        "arrayBuffers": 1013499111
+      },
+      "inflight": {
+        "total": 0,
+        "byKey": {},
+        "peakTotal": 16,
+        "peakByKey": {
+          "js_pure:4": 1,
+          "js_wasm:4": 1,
+          "js_wasm_simd:4": 1,
+          "js_worker:4": 4,
+          "js_worker:8": 8,
+          "js_worker:16": 16,
+          "js_worker_wasm:4": 4,
+          "js_worker_wasm:8": 8,
+          "js_worker_wasm:16": 16,
+          "js_worker_wasm_simd:4": 1
+        }
+      },
+      "queues": {
+        "byKey": {
+          "js_pure:4": 0,
+          "js_wasm:4": 0,
+          "js_wasm_simd:4": 0,
+          "js_worker:4": 0,
+          "js_worker:8": 0,
+          "js_worker:16": 0,
+          "js_worker_wasm:4": 0,
+          "js_worker_wasm:8": 0,
+          "js_worker_wasm:16": 0,
+          "js_worker_wasm_simd:4": 0
+        },
+        "totalPending": 0
+      }
+    },
+    "after": {
+      "upMs": 5659457.8327,
+      "requests": {
+        "ok": 16127,
+        "err": 0
+      },
+      "traffic": {
+        "bytesIn": 8360236800,
+        "bytesOut": 8360236800
+      },
+      "cpu": {
+        "cpuMs": 37110,
+        "wallMs": 40212.821899999864,
+        "cpuPercent": 92.28399860194871
+      },
+      "memory": {
+        "rss": 2762489856,
+        "heapTotal": 12120064,
+        "heapUsed": 9489224,
+        "external": 14562313,
+        "arrayBuffers": 1041167376
+      },
+      "inflight": {
+        "total": 0,
+        "byKey": {},
+        "peakTotal": 16,
+        "peakByKey": {
+          "js_pure:4": 1,
+          "js_wasm:4": 1,
+          "js_wasm_simd:4": 1,
+          "js_worker:4": 4,
+          "js_worker:8": 8,
+          "js_worker:16": 16,
+          "js_worker_wasm:4": 4,
+          "js_worker_wasm:8": 8,
+          "js_worker_wasm:16": 16,
+          "js_worker_wasm_simd:4": 1
+        }
+      },
+      "queues": {
+        "byKey": {
+          "js_pure:4": 0,
+          "js_wasm:4": 0,
+          "js_wasm_simd:4": 0,
+          "js_worker:4": 0,
+          "js_worker:8": 0,
+          "js_worker:16": 0,
+          "js_worker_wasm:4": 0,
+          "js_worker_wasm:8": 0,
+          "js_worker_wasm:16": 0,
+          "js_worker_wasm_simd:4": 0
+        },
+        "totalPending": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "timestamp": "2026-03-16T10:34:15.861Z",
+    "tag": "system_local",
+    "rep": 1,
+    "serverBase": "http://localhost:3000",
+    "client": {
+      "platform": "win32",
+      "arch": "x64",
+      "node": "v24.13.0",
+      "cpus": 16
+    }
+  },
+  "cfg": {
+    "variant": "js_worker_wasm",
+    "poolSize": 16,
+    "workload": {
+      "name": "large_1920x1080_k15_p10",
+      "width": 1920,
+      "height": 1080,
+      "kernelSize": 15,
+      "passes": 10,
+      "payloadBytes": 8294400
+    },
+    "load": {
+      "concurrency": 1,
+      "warmupSec": 2,
+      "durationSec": 10
+    }
+  },
+  "client": {
+    "requests": {
+      "ok": 4,
+      "err": 0,
+      "errorRatePercent": 0
+    },
+    "wallSec": 11.339272799999918,
+    "throughputRps": 0.3527563072651386,
+    "latency": {
+      "client": {
+        "mean": 2834.7266999999993,
+        "p50": 2835.1677000001073,
+        "p95": 2840.0026600001147,
+        "p99": 2840.6772520000814,
+        "max": 2840.845900000073
+      },
+      "server": {
+        "mean": 2820.4309999999996,
+        "p50": 2821.325,
+        "p95": 2825.1848,
+        "p99": 2825.20496,
+        "max": 2825.21
+      },
+      "compute": {
+        "mean": 2815.39175,
+        "p50": 2816.2465,
+        "p95": 2820.1497999999997,
+        "p99": 2820.18676,
+        "max": 2820.196
+      },
+      "queueWait": {
+        "mean": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "max": 0
+      }
+    }
+  },
+  "server": {
+    "before": {
+      "memory": {
+        "current": {
+          "rss": 5850308608,
+          "heapUsed": 9333352
+        },
+        "peak": {
+          "rss": 5850308608,
+          "heapUsed": 9327376
+        }
+      },
+      "cpu": {
+        "cpuPercent": 0
+      },
+      "eventLoopLag": {
+        "p95": 16.220159,
+        "p99": 16.220159,
+        "max": 16.220159
+      }
+    },
+    "after": {
+      "requests": {
+        "total": 5,
+        "ok": 5,
+        "err": 0,
+        "errorRatePercent": 0,
+        "rps": 0.34922603025503673
+      },
+      "memory": {
+        "current": {
+          "rss": 5900103680,
+          "heapUsed": 9311112
+        },
+        "peak": {
+          "rss": 5900103680,
+          "heapUsed": 9807632
+        }
+      },
+      "cpu": {
+        "cpuPercent": 100.00060471717762
+      },
+      "eventLoopLag": {
+        "p95": 16.228351,
+        "p99": 16.465919,
+        "max": 23.363583
+      },
+      "latency": {
+        "server": {
+          "mean": 2820.6954800002277,
+          "p50": 2821.753000000026,
+          "p95": 2825.1765600002373,
+          "p99": 2825.203392000254,
+          "max": 2825.2101000002585
+        },
+        "queueWait": {
+          "mean": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "compute": {
+          "mean": 2815.466000000015,
+          "p50": 2815.7623000000603,
+          "p95": 2820.1347199997863,
+          "p99": 2820.1840639997836,
+          "max": 2820.1963999997824
+        }
+      },
+      "inflight": {
+        "current": 0,
+        "peak": 1
+      },
+      "queues": {
+        "pending": 0
+      }
+    }
+  }
+}

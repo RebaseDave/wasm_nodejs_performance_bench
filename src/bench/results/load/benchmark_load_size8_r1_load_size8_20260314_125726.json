@@ -1,0 +1,219 @@
+{
+  "meta": {
+    "timestamp": "2026-03-14T11:57:22.982Z",
+    "node": "v24.13.0",
+    "platform": "win32",
+    "arch": "x64",
+    "cpus": {
+      "count": 16,
+      "model": "AMD Ryzen 7 3700X 8-Core Processor             "
+    },
+    "memory": {
+      "totalMB": 32720
+    },
+    "cfg": {
+      "mode": "load",
+      "iterations": 500,
+      "warmupIters": 50,
+      "baseSeed": 42,
+      "samplePeakMemory": true,
+      "peakSampleMs": 200,
+      "cooldownMs": 200,
+      "variantOpts": {
+        "size": 8,
+        "enforceTransfer": true
+      }
+    },
+    "runTag": "load_size8_r1"
+  },
+  "variants": {
+    "js_pure": [
+      {
+        "workload": "tiny_128x128_k3_p1",
+        "width": 128,
+        "height": 128,
+        "kernelSize": 3,
+        "iterations": 500,
+        "passes": 1,
+        "mode": "load",
+        "concurrency": 1,
+        "poolSize": 1,
+        "isWorkerVariant": false,
+        "latencyMs": {
+          "mean": 0.7876445999999924,
+          "p95": 0.8136599999977988
+        },
+        "latencyBreakdown": {
+          "roundtrip": {
+            "mean": 0.7876445999999924,
+            "p95": 0.8136599999977988
+          },
+          "compute": {
+            "mean": 0.7865407999998497,
+            "p95": 0.8122700000003533
+          }
+        },
+        "eventLoopLag": {
+          "p95": 0.000511,
+          "p99": 0.000511,
+          "max": 0
+        },
+        "wallMs": 394.09140000000116,
+        "cpu": {
+          "totalMicros": 406000,
+          "cpuToWallPercent": 103.02178631657499
+        },
+        "throughput": {
+          "mpixPerSec": 20.787055997669516
+        },
+        "memory": {
+          "peak": {
+            "rss": 532475904,
+            "heapUsed": 7105560
+          }
+        }
+      }
+    ],
+    "js_worker": [
+      {
+        "workload": "tiny_128x128_k3_p1",
+        "width": 128,
+        "height": 128,
+        "kernelSize": 3,
+        "iterations": 500,
+        "passes": 1,
+        "mode": "load",
+        "concurrency": 8,
+        "poolSize": 8,
+        "isWorkerVariant": true,
+        "latencyMs": {
+          "mean": 1.001240199999942,
+          "p95": 1.5700549999999562
+        },
+        "latencyBreakdown": {
+          "roundtrip": {
+            "mean": 1.001240199999942,
+            "p95": 1.5700549999999562
+          },
+          "compute": {
+            "mean": 0.9513441999999704,
+            "p95": 1.491244999999435
+          }
+        },
+        "eventLoopLag": {
+          "p95": 10.084351,
+          "p99": 10.084351,
+          "max": 10.084351
+        },
+        "wallMs": 63.088700000000244,
+        "cpu": {
+          "totalMicros": 547000,
+          "cpuToWallPercent": 867.033240501069
+        },
+        "throughput": {
+          "mpixPerSec": 129.84892698692425
+        },
+        "memory": {
+          "peak": {
+            "rss": 716988416,
+            "heapUsed": 7545056
+          }
+        }
+      }
+    ],
+    "js_worker_wasm": [
+      {
+        "workload": "tiny_128x128_k3_p1",
+        "width": 128,
+        "height": 128,
+        "kernelSize": 3,
+        "iterations": 500,
+        "passes": 1,
+        "mode": "load",
+        "concurrency": 8,
+        "poolSize": 8,
+        "isWorkerVariant": true,
+        "latencyMs": {
+          "mean": 1.216996199999936,
+          "p95": 1.8333050000019284
+        },
+        "latencyBreakdown": {
+          "roundtrip": {
+            "mean": 1.216996199999936,
+            "p95": 1.8333050000019284
+          },
+          "compute": {
+            "mean": 1.1749969999999812,
+            "p95": 1.7880999999981213
+          }
+        },
+        "eventLoopLag": {
+          "p95": 10.395647,
+          "p99": 10.395647,
+          "max": 10.395647
+        },
+        "wallMs": 76.7432000000008,
+        "cpu": {
+          "totalMicros": 625000,
+          "cpuToWallPercent": 814.4044032565666
+        },
+        "throughput": {
+          "mpixPerSec": 106.74561394364471
+        },
+        "memory": {
+          "peak": {
+            "rss": 781783040,
+            "heapUsed": 6967904
+          }
+        }
+      }
+    ],
+    "js_worker_wasm_simd": [
+      {
+        "workload": "tiny_128x128_k3_p1",
+        "width": 128,
+        "height": 128,
+        "kernelSize": 3,
+        "iterations": 500,
+        "passes": 1,
+        "mode": "load",
+        "concurrency": 8,
+        "poolSize": 8,
+        "isWorkerVariant": true,
+        "latencyMs": {
+          "mean": 1.2292293999999238,
+          "p95": 1.8189049999984492
+        },
+        "latencyBreakdown": {
+          "roundtrip": {
+            "mean": 1.2292293999999238,
+            "p95": 1.8189049999984492
+          },
+          "compute": {
+            "mean": 1.1846037999999826,
+            "p95": 1.7686200000029202
+          }
+        },
+        "eventLoopLag": {
+          "p95": 10.297343,
+          "p99": 10.297343,
+          "max": 10.297343
+        },
+        "wallMs": 77.33209999999963,
+        "cpu": {
+          "totalMicros": 640000,
+          "cpuToWallPercent": 827.5994056801809
+        },
+        "throughput": {
+          "mpixPerSec": 105.93272392706315
+        },
+        "memory": {
+          "peak": {
+            "rss": 913522688,
+            "heapUsed": 7899360
+          }
+        }
+      }
+    ]
+  }
+}
